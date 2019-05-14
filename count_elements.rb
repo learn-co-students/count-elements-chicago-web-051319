@@ -1,4 +1,8 @@
 def count_elements(array)
-  # code goes here
+  words = Hash.new()
+  array.each {|item|
+    words[item] ? words[item] += 1 : words[item] = 1
+  }
+  words
 end
  
